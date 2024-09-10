@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Banco</title>
+</head>
+<body>
+    <h2>Sesión iniciada</h2>
+    <main>
+        
+    
+        <section class="perfilUsuario">
+          <i id="bienvenido" class="bi bi-person-heart" style="font-size: 1.2rem; "></i> 
+          <p >Tu saldo actual es: </p>
+          <p id="saldoActual" ></p>
+          <button onclick="consultaBalance()" class="btn btn-primary" style="background-color:#1c3e55 ; border-color: transparent;">Consultar saldo</button>
+          <br>
+          <button onclick="signout ()"class="btn btn-primary" style="background-color:#4373ab; border-color: transparent;">Cerrar sesión</button>
+        </section>
+
+        <section class="operaciones">
+        <div class="d-flex">
+                <input  type="number" id="credit" class="form-control me-2"></input>
+                <button onclick="credit ()" type="button" class="btn btn-primary" style="background-color:#1c3e55 ; border-color: transparent;">Abonar</button>
+        </div>
+            <br>
+        <div class="d-flex">
+            <input type="number" id="withdraw" class="form-control me-2"></input> 
+            <button onclick="withdraw()" type="button" class="btn btn-primary" style="background-color:#1c3e55 ; border-color: transparent;">Retirar</button>
+        </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
